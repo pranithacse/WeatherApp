@@ -1,0 +1,13 @@
+let request = require('request');
+
+let apiKey = 'e3701e620c3669a3b6642981b357c3ab';
+let city = 'Hyderabad';
+let url = `http://api.openweathermap.org/data/2.5/weather?q=Hyderabad,IN&appid=e3701e620c3669a3b6642981b357c3ab&units=metric`
+
+request(url, function (err, response, body) {
+  if(err){
+    console.log('error:', error);
+  } else {
+    console.log('body:', body);
+  }
+});
